@@ -1,0 +1,21 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# IDE and Editors
+.idea/
+.vscode/
+
+# Playwright artifacts and test reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

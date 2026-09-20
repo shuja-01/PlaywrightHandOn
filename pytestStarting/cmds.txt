@@ -1,0 +1,36 @@
+run individual file : 
+pytest filename.py : it will run only that specific file and the tests related to it
+pytest filename.py -s : it will run the file and it will print the print statements
+pytest filename.py -v : it will run the file and it will show the verbose output
+
+run all files in a directory : 
+pytest
+
+run all files in a directory with verbose output : 
+pytest -v
+
+run all files in a directory with print statements : 
+pytest -s
+
+run tests in parallel : 
+pytest -n auto
+
+run 1 function from sprcific file : 
+pytest filename.py::functionname
+pytest filename.py::functionname -s : it will run only that specific function and it will print the print statements
+
+run 2 function from sprcific file : 
+pytest filename.py::functionname1::functionname2
+pytest filename.py::functionname1::functionname2 -s : it will run only that specific function and it will print the print statements
+
+
+we can run multiple func from different py files, using grouping the func using "@pytest.mark.groupname{exp : @pytest.mark.smoke}"
+run specific group of tests : 
+pytest -m groupname
+run multiple group of tests : 
+pytest -m groupname1::groupname2
+skip the tests : 
+@pytest.mark.skip(reason="will skip in future")
+
+skip the tests with condition : 
+@pytest.mark.skipif(condition,reason="will skip if condition is true")

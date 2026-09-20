@@ -20,11 +20,13 @@ def secondWork():
 
 
 # passing "prework" as a parameter ensures that the fixture is run before the test
+@pytest.mark.smoke
 def test_initialCheck(prework, secondWork):
     print("THis is first test")
     # assert prework == "fail"
     assert prework == "pass"
 
+@pytest.mark.smoke
 def test_secondCheck(prework, secondWork):
     print("THis is second test")
 

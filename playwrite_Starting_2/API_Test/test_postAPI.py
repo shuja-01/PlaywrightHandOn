@@ -9,7 +9,7 @@ def test_postAPI(playwright: Playwright):
     unique_email = f"maschef{int(time.time())}@example.com"
     
     payload = { "name": "Master Chef", "email": unique_email, "gender": "male", "status": "active" }
-    headers={"Authorization": "Bearer 43372f82f2332c239cf4e56e8dd9fc673fa31fb23d8979abcaec4114ba737a9d",
+    headers={"Authorization": "Bearer sdfv",
                      "Accept": "application/json"}
     
     response = request.post(

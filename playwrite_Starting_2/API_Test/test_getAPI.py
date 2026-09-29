@@ -6,7 +6,7 @@ def test_getAPI(playwright: Playwright):
 
     response = request.get(
         url,
-        headers={"Authorization": "Bearer 43372f82f2332c239cf4e56e8dd9fc673fa31fb23d8979abcaec4114ba737a9d",
+        headers={"Authorization": "Bearer sfv",
                  "Accept": "application/json"}
         )
 

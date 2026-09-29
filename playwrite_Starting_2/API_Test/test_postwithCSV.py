@@ -25,7 +25,7 @@ def test_createUser(playwright: Playwright):
         }
         
         headers = {
-            "Authorization": "Bearer 43372f82f2332c239cf4e56e8dd9fc673fa31fb23d8979abcaec4114ba737a9d",
+            "Authorization": "Bearer dsf",
             "Accept": "application/json"
         }
 
